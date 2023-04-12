@@ -1,0 +1,19 @@
+@mixin button {
+  width: 15rem;
+  line-height: 4rem;
+  background-color: var(--button-color);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: $font-button;
+  font-weight: 300;
+  border-radius: 3px;
+  transition: transform 0.3s;
+
+  @media only screen and (max-width: $bp-vsmall) {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,21 @@
+.carousel-control-prev,
+.carousel-control-next {
+  @media only screen and (max-width: $bp-large) {
+    width: 5% !important;
+  }
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../media/left-chevron.png") !important;
+  filter: invert(100%);
+}
+.carousel-control-next-icon {
+  background-image: url("../media/right-chevron.png") !important;
+  filter: invert(100%);
+}
+.carousel-inner {
+  @media only screen and (max-width: $bp-large) {
+    width: 80% !important;
+    margin: auto;
+  }
+}

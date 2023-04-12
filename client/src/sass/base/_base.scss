@@ -1,0 +1,51 @@
+:root {
+  --background-color: #1e3a2d;
+  --contact-color: #bfb07b;
+  --input-color: #d9d9d9;
+  --button-color: #9ecfe4;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: var(--background-color) !important;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0.8rem, 1fr) repeat(8, minmax(min-content, 15rem)) minmax(
+      0.8rem,
+      1fr
+    );
+  grid-template-rows: 8rem repeat(4, minmax(min-content, 60vh)) 10vh;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 8rem repeat(5, minmax(min-content, 60vh)) 10vh;
+    grid-template-columns: minmax(0.8rem, 1fr) repeat(8, 10vw) minmax(0.8rem, 1fr);
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    grid-template-rows: 8rem 50vh repeat(3, minmax(min-content, 70vh)) min-content min-content;
+    grid-template-columns: minmax(0.8rem, 1fr) repeat(8, 10%) minmax(0.8rem, 1fr);
+  }
+}

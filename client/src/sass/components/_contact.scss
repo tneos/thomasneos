@@ -1,0 +1,142 @@
+.contact {
+  background-color: var(--contact-color);
+  grid-column: 1 / -1;
+  grid-row: 5 / 6;
+
+  &__container {
+    width: 100%;
+    height: 95rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      height: 70rem;
+    }
+  }
+  &__title {
+    color: #fff;
+    font-size: 3.5rem;
+    font-family: $font-description;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 4rem 0;
+
+    @media only screen and (max-width: $bp-vsmall) {
+      font-size: 2.8rem;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 2.5rem;
+    }
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 90%;
+      margin: 4rem auto;
+      display: block;
+      background-color: #fff;
+    }
+  }
+
+  &__form-container {
+    width: 70%;
+    height: 75rem;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+
+    @media only screen and (max-width: $bp-vsmall) {
+      width: 85%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      height: 78%;
+    }
+  }
+  &__form {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  &__form-field {
+    width: 90%;
+    margin: 3rem auto;
+
+    @media only screen and (max-width: $bp-vsmall) {
+      margin: 3rem 0;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      margin: 2rem 0;
+    }
+  }
+
+  &__form-field:last-of-type {
+    margin-bottom: 8rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      margin-bottom: 6rem;
+    }
+  }
+  &__form-label {
+    font-size: 1.8rem;
+    font-weight: 200;
+    display: block;
+    opacity: 55%;
+    margin-left: 4.7rem;
+
+    @media only screen and (max-width: $bp-vsmall) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 1.2rem;
+      margin-left: 2.7rem;
+    }
+  }
+  &__form-input {
+    width: 90%;
+    margin: 0 5%;
+    height: 6rem;
+    font-size: 1.8rem;
+    font-family: $font-description;
+    font-weight: 200;
+    color: #fff;
+    background-color: var(--input-color);
+    border: var(--input-color);
+    border-radius: 4px;
+
+    &::placeholder {
+      padding-left: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-vsmall) {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      height: 4rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__submit {
+    @include button;
+    display: block;
+    border: var(--button-color);
+    margin: 0 auto;
+  }
+  #message {
+    height: 24rem;
+    position: relative;
+
+    &::placeholder {
+      position: absolute;
+      top: 8%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      height: 18rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-row: 6/ 7;
+    grid-column: 1 / -1;
+  }
+}
