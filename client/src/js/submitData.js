@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const form = document.getElementById("form");
 console.log(form);
 
@@ -23,7 +25,7 @@ form.addEventListener("submit", async e => {
   };
 
   try {
-    const res = await axios.post(`http://localhost:8080/email`, form, config);
+    const res = await axios.post("http://localhost:5000/message", form, config);
     console.log(res);
   } catch (err) {
     console.log(err);
