@@ -724,12 +724,13 @@ body {
 
 .contact #message {
   height: 24rem;
-  color: #666;
+  color: #000;
   padding: 1.6rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .contact #message::placeholder {
+  color: #666;
   font-weight: 200;
   position: absolute;
   top: 5.8%;

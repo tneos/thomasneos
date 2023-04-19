@@ -128,11 +128,12 @@
   #message {
     height: 24rem;
     padding: 1.6rem;
-    font-weight: 200;
-    color: #666;
+    font-weight: 300;
+    color: #000;
 
     &::placeholder {
       font-weight: 200;
+      color: #666;
       position: absolute;
       top: 5.8%;
       left: 3%;
