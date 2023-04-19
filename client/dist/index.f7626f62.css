@@ -724,20 +724,32 @@ body {
 
 .contact #message {
   height: 24rem;
+  color: #666;
   padding: 1.6rem;
-  top: 2%;
+  font-weight: 200;
 }
 
 .contact #message::placeholder {
   font-weight: 200;
   position: absolute;
   top: 5.8%;
-  left: 3.5%;
+  left: 3%;
+}
+
+@media only screen and (max-width: 50.063em) {
+  .contact #message::placeholder {
+    left: 5%;
+  }
 }
 
 @media only screen and (max-width: 39.375em) {
+  .contact #message::placeholder {
+    top: 8%;
+  }
+
   .contact #message {
     height: 18rem;
+    padding: 1.4rem;
   }
 }
 
