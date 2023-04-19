@@ -1,16 +1,13 @@
 import axios from "axios";
 
-const form = document.getElementById("form");
-console.log(form);
+const input = document.getElementById("submit");
 
-form.addEventListener("submit", async e => {
+input.addEventListener("click", e => {
   e.preventDefault();
 
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
   let message = document.getElementById("message").value;
-
-  console.log(name, email, message);
 
   const form = {
     name,
@@ -18,16 +15,25 @@ form.addEventListener("submit", async e => {
     message,
   };
 
+  sentMessage(form);
+});
+
+const sentMessage = async function (data) {
   const config = {
     headers: {
       "Content-Type": "application/json",
     },
   };
-
   try {
-    const res = await axios.post("http://localhost:5000/message", form, config);
-    console.log(res);
+    const res = await axios.post("http://localhost:5000/message", data, config);
+
+    // Clear input after submitting data
+    res.data && document.getElementById("form").reset();
+
+    // Display confirmation for 1 sec
+    document.getElementById("confirmation").style.display = "block";
+    setTimeout(() => (document.getElementById("confirmation").style.display = "none"), 1000);
   } catch (err) {
     console.log(err);
   }
-});
+};

@@ -26,6 +26,7 @@
   --contact-color: #bfb07b;
   --input-color: #d9d9d9;
   --button-color: #9ecfe4;
+  --success-color: #00ffbf;
 }
 
 * {
@@ -595,6 +596,7 @@ body {
   border: 1px solid #0006;
   border-radius: 4px;
   margin: auto;
+  position: relative;
 }
 
 @media only screen and (max-width: 46.563em) {
@@ -617,6 +619,7 @@ body {
 .contact__form-field {
   width: 90%;
   margin: 3rem auto;
+  position: relative;
 }
 
 @media only screen and (max-width: 46.563em) {
@@ -665,18 +668,19 @@ body {
 .contact__form-input {
   width: 90%;
   height: 6rem;
-  color: #fff;
+  color: #000;
   background-color: var(--input-color);
   border: var(--input-color);
   border-radius: 4px;
   margin: 0 5%;
+  padding-left: 1.5rem;
   font-family: Inconsolata, monospace;
   font-size: 1.8rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .contact__form-input::placeholder {
-  padding-left: 1.5rem;
+  font-weight: 200;
 }
 
 @media only screen and (max-width: 46.563em) {
@@ -720,17 +724,55 @@ body {
 
 .contact #message {
   height: 24rem;
-  position: relative;
+  padding: 1.6rem;
+  top: 2%;
 }
 
 .contact #message::placeholder {
+  font-weight: 200;
   position: absolute;
-  top: 8%;
+  top: 5.8%;
+  left: 3.5%;
 }
 
 @media only screen and (max-width: 39.375em) {
   .contact #message {
     height: 18rem;
+  }
+}
+
+.contact__confirmation {
+  background-color: var(--success-color);
+  color: #fff;
+  width: 35%;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 25px;
+  display: none;
+  position: absolute;
+  left: 32%;
+}
+
+@media only screen and (max-width: 57.5em) {
+  .contact__confirmation {
+    width: 50%;
+    left: 26%;
+  }
+}
+
+@media only screen and (max-width: 46.563em) {
+  .contact__confirmation {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 39.375em) {
+  .contact__confirmation {
+    width: 70%;
+    font-size: 1rem;
+    left: 15%;
   }
 }
 

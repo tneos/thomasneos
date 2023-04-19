@@ -136,21 +136,22 @@
         <div class="contact__container">
           <h1 class="contact__title">Contact</h1>
           <div class="contact__form-container">
-            <form action="" class="contact__form" id="form">
+            <form action="post" class="contact__form" id="form">
               <div class="contact__form-field">
                 <label for="name" class="contact__form-label" >Name</label>
                 <input required placeholder="Enter your name" type="text" class="contact__form-input" name="name" id="name">
               </div>
               <div class="contact__form-field">
                 <label for="email" class="contact__form-label">Email</label>
-                <input required placeholder="Enter your email" type="text" class="contact__form-input" name="email" id="email">
+                <input required placeholder="Enter your email" type="email" class="contact__form-input" name="email" id="email">
               </div>
               <div class="contact__form-field">
                 <label for="message" class="contact__form-label">Message</label>
-                <input required placeholder="Enter your message" type="text" class="contact__form-input" id="message" name="message">
+                <textarea required placeholder="Enter your message" type="text" class="contact__form-input" id="message" name="message" rows="5" cols="63">Enter your message</textarea>
               </div>
-              <input type="submit" value="Submit" class="contact__submit"  />
+              <input type="submit" value="Submit" class="contact__submit" id="submit"  />
             </form>
+            <p class="contact__confirmation" id="confirmation">Your message was successfully submitted</p>
           </div>
         </div>
       </section>
@@ -181,5 +182,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    
+    
   </body>
 </html>

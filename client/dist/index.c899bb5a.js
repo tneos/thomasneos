@@ -560,31 +560,36 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-const form = document.getElementById("form");
-console.log(form);
-form.addEventListener("submit", async (e)=>{
+const input = document.getElementById("submit");
+input.addEventListener("click", (e)=>{
     e.preventDefault();
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
-    console.log(name, email, message);
     const form = {
         name,
         email,
         message
     };
+    sentMessage(form);
+});
+const sentMessage = async function(data) {
     const config = {
         headers: {
             "Content-Type": "application/json"
         }
     };
     try {
-        const res = await (0, _axiosDefault.default).post("http://localhost:5000/message", form, config);
-        console.log(res);
+        const res = await (0, _axiosDefault.default).post("http://localhost:5000/message", data, config);
+        // Clear input after submitting data
+        res.data && document.getElementById("form").reset();
+        // Display confirmation for 1 sec
+        document.getElementById("confirmation").style.display = "block";
+        setTimeout(()=>document.getElementById("confirmation").style.display = "none", 1000);
     } catch (err) {
         console.log(err);
     }
-});
+};
 
 },{"axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jo6P5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
