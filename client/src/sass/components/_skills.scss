@@ -4,8 +4,9 @@
 
   &__container {
     width: 90%;
+    margin: auto;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: $bp-medium) {
       width: 100%;
     }
   }
@@ -15,12 +16,15 @@
     font-family: $font-description;
     letter-spacing: 5px;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: $bp-medium) {
       font-size: 2.8rem;
       text-align: center;
     }
     @media only screen and (max-width: $bp-mobile) {
       font-size: 2.5rem;
+    }
+    @media only screen and (max-width: $bp-smallMobile) {
+      font-size: 2.3rem;
     }
 
     &::after {
@@ -36,7 +40,7 @@
   &__buttons {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
     grid-gap: 1rem;
   }
   &__skill {
@@ -52,8 +56,11 @@
     font-weight: 600;
     color: #666;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: $bp-medium) {
       font-size: 1.5rem;
+    }
+    @media only screen and (max-width: $bp-smallMobile) {
+      font-size: 1.3rem;
     }
   }
 

@@ -4,7 +4,7 @@
 
   margin: 4rem;
 
-  @media only screen and (max-width: $bp-vsmall) {
+  @media only screen and (max-width: $bp-medium) {
     margin: 4rem 0;
   }
 
@@ -16,12 +16,15 @@
     text-align: center;
     margin: 4rem 0;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: $bp-medium) {
       font-size: 2.8rem;
     }
 
     @media only screen and (max-width: $bp-mobile) {
       font-size: 2.5rem;
+    }
+    @media only screen and (max-width: $bp-smallMobile) {
+      font-size: 2.3rem;
     }
 
     &::after {
@@ -38,8 +41,9 @@
     width: 100%;
     height: 50vh;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-medium) {
       height: 40vh;
+      margin-bottom: 2rem;
     }
 
     @media only screen and (max-width: $bp-mobile) {
@@ -54,7 +58,7 @@
     margin: 6rem 0;
     position: relative;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-medium) {
       margin-top: 0;
     }
   }
@@ -67,7 +71,7 @@
     display: inline-block;
     width: 100%;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-medium) {
       margin-bottom: 3rem;
     }
 
@@ -76,6 +80,9 @@
     }
     @media only screen and (max-width: $bp-mobile) {
       font-size: 2.5rem;
+    }
+    @media only screen and (max-width: $bp-smallMobile) {
+      font-size: 2.3rem;
     }
   }
   &__link {
@@ -87,14 +94,17 @@
     top: 5%;
 
     @media only screen and (max-width: $bp-medium) {
-      width: 7%;
-      top: 3%;
-      right: 30%;
+      width: 5%;
+      top: 4%;
+      right: 35%;
     }
     @media only screen and (max-width: $bp-mobile) {
       width: 8%;
-      top: 3%;
-      right: 22%;
+      top: 2%;
+      right: 24%;
+    }
+    @media only screen and (max-width: $bp-smallMobile) {
+      right: 20%;
     }
   }
   &__project-desc {
@@ -105,12 +115,16 @@
     line-height: 1.4;
     margin: auto;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: $bp-medium) {
       font-size: 2rem;
       width: 100%;
     }
     @media only screen and (max-width: $bp-mobile) {
       font-size: 1.7rem;
+    }
+    @media only screen and (max-width: $bp-smallMobile) {
+      font-size: 1.5rem;
+      margin-left: 1rem;
     }
   }
 

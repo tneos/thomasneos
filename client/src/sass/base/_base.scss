@@ -35,13 +35,24 @@ body {
 #root {
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(0.8rem, 1fr) repeat(8, minmax(min-content, 15rem)) minmax(
+  grid-template-columns: minmax(0.8rem, 1fr) repeat(8, minmax(min-content, 14rem)) minmax(
       0.8rem,
       1fr
     );
   grid-template-rows: 8rem repeat(4, minmax(min-content, 60vh)) 10vh;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: minmax(0.8rem, 1fr) repeat(8, minmax(min-content, 11rem)) minmax(
+        0.8rem,
+        1fr
+      );
+  }
+
+  @media (max-width: $bp-medium) {
+    grid-template-rows: 8rem repeat(5, minmax(min-content, 60vh)) 20vh;
+    grid-template-columns: minmax(0.8rem, 1fr) repeat(8, 10vw) minmax(0.8rem, 1fr);
+  }
+  @media (min-height: $bp-medHight) and (max-width: $bp-medium) {
     grid-template-rows: 8rem repeat(5, minmax(min-content, 60vh)) 10vh;
     grid-template-columns: minmax(0.8rem, 1fr) repeat(8, 10vw) minmax(0.8rem, 1fr);
   }

@@ -8,7 +8,7 @@
     margin: 8rem auto;
     display: table;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: $bp-medium) {
       width: 80%;
     }
     @media only screen and (max-width: $bp-mobile) {
@@ -24,12 +24,15 @@
     font-weight: 200;
     line-height: 1.4;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: $bp-medium) {
       text-align: center;
       font-size: 2rem;
     }
     @media only screen and (max-width: $bp-mobile) {
       font-size: 1.7rem;
+    }
+    @media only screen and (max-width: $bp-smallMobile) {
+      font-size: 1.5rem;
     }
   }
 }

@@ -9,9 +9,9 @@
     width: 70%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: $bp-medium) {
       width: 85%;
     }
 
@@ -24,7 +24,7 @@
       display: block;
       background-color: #000;
 
-      @media only screen and (max-width: $bp-vsmall) {
+      @media only screen and (max-width: $bp-medium) {
         width: 85%;
       }
     }
@@ -33,12 +33,17 @@
   &__link {
     font-family: $font-links;
     font-size: 1.5rem;
+    width: 20%;
+    text-align: center;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: $bp-medium) {
       font-size: 1.2rem;
     }
     @media only screen and (max-width: $bp-mobile) {
       font-size: 1rem;
+    }
+    @media only screen and (max-width: $bp-smallMobile) {
+      font-size: 0.9rem;
     }
   }
   &__copyright {
@@ -47,12 +52,15 @@
     text-align: center;
     letter-spacing: 2px;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: $bp-medium) {
       font-size: 1.2rem;
       margin: 1rem;
     }
     @media only screen and (max-width: $bp-mobile) {
       font-size: 1rem;
+    }
+    @media only screen and (max-width: $bp-smallMobile) {
+      font-size: 0.9rem;
     }
   }
 
