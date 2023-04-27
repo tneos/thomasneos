@@ -896,7 +896,7 @@ body {
   font-size: 1.4rem;
   font-weight: 200;
   line-height: 28px;
-  display: block;
+  display: none;
   position: absolute;
   left: 32%;
 }
