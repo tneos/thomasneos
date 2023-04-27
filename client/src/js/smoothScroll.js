@@ -1,5 +1,9 @@
-window.smoothScroll = function (target) {
-  let scrollContainer = target;
+const projectsLink = document.getElementById("projects-link");
+let projectsSection = document.getElementById("projects");
+
+projectsLink.addEventListener("click", e => {
+  e.preventDefault();
+  let scrollContainer = projectsSection;
   do {
     //find scroll container
     scrollContainer = scrollContainer.parentNode;
@@ -10,9 +14,9 @@ window.smoothScroll = function (target) {
   let targetY = 0;
   do {
     //find the top of target relatively to the container
-    if (target == scrollContainer) break;
-    targetY += target.offsetTop;
-  } while ((target = target.offsetParent));
+    if (projectsSection == scrollContainer) break;
+    targetY += projectsSection.offsetTop;
+  } while ((projectsSection = projectsSection.offsetParent));
 
   scroll = function (c, a, b, i) {
     i++;
@@ -24,4 +28,4 @@ window.smoothScroll = function (target) {
   };
   // start scrolling
   scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-};
+});
