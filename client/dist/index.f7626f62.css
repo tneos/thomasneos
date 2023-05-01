@@ -41,6 +41,7 @@
 html {
   box-sizing: border-box;
   width: 100vw;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   font-size: 62.5%;
@@ -186,6 +187,11 @@ body {
   .header__link {
     font-size: 1.1rem;
   }
+}
+
+.header__link:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .intro {

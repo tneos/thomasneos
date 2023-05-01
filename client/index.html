@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Benne&family=Cormorant+Garamond:wght@300&family=Glory:wght@200;300&family=Inconsolata:wght@200;300&family=Indie+Flower&family=Truculenta:opsz,wght@12..72,100;12..72,200;12..72,300;12..72,600&display=swap" rel="stylesheet">
+<!--JQuery-->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -18,7 +23,8 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-  
+   
+    <script defer type="module" src="./src/js/submitData.js"></script>
 
     
     <!--Axios library-->
@@ -31,8 +37,7 @@
         <div class="header__container">
           <img class="header__img" src="src/media/me.jpg" alt="Author's sketched image" />
           <h1 class="header__title">Thomas Neos</h1>
-          <!-- <h4 class="header__link" onclick="smoothScroll(document.getElementById('projects'))">Projects</h4> -->
-          <h4 class="header__link" id="projects-link">Projects</h4>
+          <a class="header__link" id="projects-link" href="#projects">Projects</a>
         </div>
       </header>
       <section class="intro">
@@ -56,7 +61,7 @@
             form below.
           </p>
           <div class="about-me__link-container">
-            <a href="#contact" class="about-me__btn" onclick="smoothScroll(document.getElementById('contact'))">Contact</a>
+            <a href="#contact" class="about-me__btn">Contact</a>
           </div>
           
         </div>
@@ -180,7 +185,6 @@
       crossorigin="anonymous"
     ></script>
     
-    <script type="module"  src="./src/js/smoothScroll.js"></script>
-    <script type="module" src="./src/js/submitData.js"></script>
+    
   </body>
 </html>
