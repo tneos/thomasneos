@@ -580,6 +580,7 @@ const sentMessage = async function(data) {
         }
     };
     try {
+        console.log("https://submit-form-api.onrender.com");
         const res = await (0, _axiosDefault.default).post("http://localhost:5000/message", data, config);
         // Clear input after submitting data
         res.data && document.getElementById("form").reset();

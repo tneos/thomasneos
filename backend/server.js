@@ -24,4 +24,10 @@ app.use(express.json());
 app.use("/message", require("./routes/message"));
 // Connect to Database
 connectDB();
+
+// Load App in production
+
+if (process.env.MODE === "production") {
+  app.get("/*", (req, res) => res.sendFile(path.join(__dirname, "../client/build/index.html")));
+}
 app.listen(PORT, () => console.log("Server is starting on port ", PORT));
