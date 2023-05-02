@@ -586,7 +586,7 @@ const sentMessage = async function(data) {
         res.data && document.getElementById("form").reset();
         // Display confirmation for 1 sec
         document.getElementById("confirmation").style.display = "block";
-        setTimeout(()=>document.getElementById("confirmation").style.display = "none", 2000);
+        setTimeout(()=>document.getElementById("confirmation").style.display = "none", 4000);
     } catch (err) {
         console.log(err);
     }
