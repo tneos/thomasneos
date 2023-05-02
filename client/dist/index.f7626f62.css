@@ -955,6 +955,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 50.063em) {
+  .footer__links {
+    margin-bottom: 1.5rem;
+  }
+}
+
 .footer__links:after {
   content: "";
   height: .5px;
@@ -968,6 +974,12 @@ body {
 @media only screen and (max-width: 57.5em) {
   .footer__links:after {
     width: 85%;
+  }
+}
+
+@media only screen and (max-width: 50.063em) {
+  .footer__links:after {
+    top: 2rem;
   }
 }
 
