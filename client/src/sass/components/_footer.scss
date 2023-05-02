@@ -10,6 +10,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1rem;
 
     @media only screen and (max-width: $bp-medium) {
       width: 85%;
@@ -35,6 +36,9 @@
     font-size: 1.5rem;
     width: 20%;
     text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
 
     @media only screen and (max-width: $bp-medium) {
       font-size: 1.2rem;
@@ -46,6 +50,12 @@
       font-size: 0.9rem;
     }
   }
+
+  &__link:hover {
+    text-decoration: none;
+    color: #000;
+  }
+
   &__copyright {
     font-family: $font-links;
     font-size: 1.5rem;
