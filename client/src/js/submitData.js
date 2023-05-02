@@ -36,7 +36,7 @@ const sentMessage = async function (data) {
 
     // Display confirmation for 1 sec
     document.getElementById("confirmation").style.display = "block";
-    setTimeout(() => (document.getElementById("confirmation").style.display = "none"), 2000);
+    setTimeout(() => (document.getElementById("confirmation").style.display = "none"), 4000);
   } catch (err) {
     console.log(err);
   }
