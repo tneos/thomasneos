@@ -25,7 +25,11 @@ const sentMessage = async function (data) {
     },
   };
   try {
-    const res = await axios.post("http://localhost:5000/message", data, config);
+    console.log(process.env.APP_BACKEND_URL);
+    const res =
+      process.env.APP_ENV !== "production"
+        ? await axios.post("http://localhost:5000/message", data, config)
+        : await axios.post(`${process.env.APP_BACKEND_URL}/message`, data, config);
 
     // Clear input after submitting data
     res.data && document.getElementById("form").reset();
