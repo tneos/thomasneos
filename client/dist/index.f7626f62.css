@@ -890,14 +890,14 @@ body {
 
 .contact__confirmation {
   background-color: var(--success-color);
-  color: #fff;
+  color: #000;
   width: 35%;
   height: 3rem;
   text-align: center;
   font-size: 1.4rem;
   font-weight: 200;
   line-height: 28px;
-  display: none;
+  display: block;
   position: absolute;
   left: 32%;
 }

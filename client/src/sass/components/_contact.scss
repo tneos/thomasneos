@@ -166,11 +166,11 @@
   }
 
   &__confirmation {
-    display: none;
+    display: block;
     position: absolute;
     left: 32%;
     background-color: var(--success-color);
-    color: #fff;
+    color: #000;
     width: 35%;
     height: 3rem;
     line-height: 28px;
