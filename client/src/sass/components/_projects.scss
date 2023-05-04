@@ -93,14 +93,22 @@
     right: 40%;
     top: 5%;
 
-    @media only screen and (max-width: $bp-medium) {
-      width: 5%;
+    @media only screen and (max-width: $bp-large) {
+      width: 4%;
       top: 4%;
       right: 35%;
     }
+    @media only screen and (max-width: $bp-medium) {
+      top: 7%;
+      right: 34%;
+    }
+    @media only screen and (max-width: $bp-vsmall) {
+      top: 5%;
+      right: 35%;
+    }
     @media only screen and (max-width: $bp-mobile) {
-      width: 8%;
-      top: 2%;
+      width: 7%;
+      top: 3%;
       right: 24%;
     }
     @media only screen and (max-width: $bp-smallMobile) {

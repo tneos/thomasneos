@@ -9,9 +9,23 @@
   background-image: url("left-chevron.23e53795.png") !important;
 }
 
+@media only screen and (max-width: 39.375em) {
+  .carousel-control-prev-icon {
+    width: 10px !important;
+    height: 10px !important;
+  }
+}
+
 .carousel-control-next-icon {
   filter: invert();
   background-image: url("right-chevron.0d3e698d.png") !important;
+}
+
+@media only screen and (max-width: 39.375em) {
+  .carousel-control-next-icon {
+    width: 10px !important;
+    height: 10px !important;
+  }
 }
 
 @media only screen and (max-width: 68.75em) {
@@ -585,18 +599,32 @@ body {
   right: 40%;
 }
 
+@media only screen and (max-width: 68.75em) {
+  .projects__link {
+    width: 4%;
+    top: 4%;
+    right: 35%;
+  }
+}
+
 @media only screen and (max-width: 57.5em) {
   .projects__link {
-    width: 5%;
-    top: 4%;
+    top: 7%;
+    right: 34%;
+  }
+}
+
+@media only screen and (max-width: 46.563em) {
+  .projects__link {
+    top: 5%;
     right: 35%;
   }
 }
 
 @media only screen and (max-width: 39.375em) {
   .projects__link {
-    width: 8%;
-    top: 2%;
+    width: 7%;
+    top: 3%;
     right: 24%;
   }
 }
@@ -859,7 +887,7 @@ body {
   color: #666;
   font-weight: 200;
   position: absolute;
-  top: 5.8%;
+  top: 6.8%;
   left: 3%;
 }
 
@@ -897,7 +925,7 @@ body {
   font-size: 1.4rem;
   font-weight: 200;
   line-height: 28px;
-  display: block;
+  display: none;
   position: absolute;
   left: 32%;
 }
