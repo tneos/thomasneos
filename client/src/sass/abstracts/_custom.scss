@@ -8,10 +8,20 @@
 .carousel-control-prev-icon {
   background-image: url("../media/left-chevron.png") !important;
   filter: invert(100%);
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: 10px !important;
+    height: 10px !important;
+  }
 }
 .carousel-control-next-icon {
   background-image: url("../media/right-chevron.png") !important;
   filter: invert(100%);
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: 10px !important;
+    height: 10px !important;
+  }
 }
 .carousel-inner {
   @media only screen and (max-width: $bp-large) {
