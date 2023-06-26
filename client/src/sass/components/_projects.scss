@@ -39,7 +39,7 @@
 
   &__carousel {
     width: 100%;
-    height: 50vh;
+    height: 68vh;
 
     @media only screen and (max-width: $bp-medium) {
       height: 40vh;
@@ -52,6 +52,12 @@
   }
   &__carousel-inner {
     height: 100%;
+    width: 100%;
+  }
+
+  .video {
+    width: 60%;
+    margin: 0 20%;
   }
 
   &__project {
