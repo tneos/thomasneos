@@ -42,12 +42,12 @@
     height: 68vh;
 
     @media only screen and (max-width: $bp-medium) {
-      height: 40vh;
+      height: 25%;
       margin-bottom: 2rem;
     }
 
     @media only screen and (max-width: $bp-mobile) {
-      height: 30vh;
+      height: 15vh;
     }
   }
   &__carousel-inner {
