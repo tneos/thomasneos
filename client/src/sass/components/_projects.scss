@@ -57,13 +57,10 @@
 
   .video {
     width: 60%;
-    height: 25vw;
+    height: 23vw;
     margin: 0 20%;
     object-fit: cover;
 
-    @media only screen and (max-width: $bp-large) {
-      height: 23vw;
-    }
     @media only screen and (max-width: $bp-medium) {
       margin: 0 14%;
       width: 72%;
