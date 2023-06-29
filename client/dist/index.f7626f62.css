@@ -537,7 +537,7 @@ body {
 
 @media only screen and (max-width: 39.375em) {
   .projects__carousel {
-    height: 15vh;
+    height: 14vh;
   }
 }
 
@@ -548,7 +548,23 @@ body {
 
 .projects .video {
   width: 60%;
+  height: 25vw;
+  object-fit: cover;
   margin: 0 20%;
+}
+
+@media only screen and (max-width: 68.75em) {
+  .projects .video {
+    height: 23vw;
+  }
+}
+
+@media only screen and (max-width: 57.5em) {
+  .projects .video {
+    width: 72%;
+    height: 27vw;
+    margin: 0 14%;
+  }
 }
 
 .projects__project {
