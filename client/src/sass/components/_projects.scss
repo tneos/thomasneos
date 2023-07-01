@@ -38,8 +38,9 @@
   }
 
   &__carousel {
-    width: 100%;
-    height: 48vh;
+    width: 50%;
+    height: 25rem;
+    margin: 0 25%;
 
     @media only screen and (max-width: $bp-medium) {
       height: 25%;
@@ -56,14 +57,13 @@
   }
 
   .video {
-    width: 60%;
-    height: 23vw;
-    margin: 0 20%;
+    width: 100%;
+    height: 19vw;
     object-fit: cover;
 
     @media only screen and (max-width: $bp-medium) {
-      margin: 0 14%;
-      width: 72%;
+      margin: 0 5%;
+      width: 90%;
       height: 27vw;
     }
   }

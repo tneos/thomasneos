@@ -5,6 +5,13 @@
   }
 }
 
+.carousel-control-prev {
+  transform: translateX(-10rem);
+}
+.carousel-control-next {
+  transform: translateX(10rem);
+}
+
 .carousel-control-prev-icon {
   background-image: url("../media/left-chevron.png") !important;
   filter: invert(100%);
@@ -23,9 +30,9 @@
     height: 10px !important;
   }
 }
-.carousel-inner {
-  @media only screen and (max-width: $bp-large) {
-    width: 100% !important;
-    margin: auto;
-  }
-}
+// .carousel-inner {
+//   @media only screen and (max-width: $bp-large) {
+//     width: 80% !important;
+//     margin: 0 10%;
+//   }
+// }
