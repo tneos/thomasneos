@@ -8,6 +8,10 @@
     margin: 4rem 0;
   }
 
+  &__container {
+    width: 100%;
+  }
+
   &__title {
     color: #fff;
     font-size: 3.5rem;
@@ -39,21 +43,14 @@
 
   &__carousel {
     width: 50%;
-    height: 25rem;
+    height: 19vw;
     margin: 0 25%;
 
     @media only screen and (max-width: $bp-medium) {
-      height: 25%;
-      margin-bottom: 2rem;
+      width: 80%;
+      height: 26vw;
+      margin: 0 10% 7rem 10%;
     }
-
-    @media only screen and (max-width: $bp-mobile) {
-      height: 14vh;
-    }
-  }
-  &__carousel-inner {
-    height: 100%;
-    width: 100%;
   }
 
   .video {
@@ -62,9 +59,7 @@
     object-fit: cover;
 
     @media only screen and (max-width: $bp-medium) {
-      margin: 0 5%;
-      width: 90%;
-      height: 27vw;
+      height: 30vw;
     }
   }
 

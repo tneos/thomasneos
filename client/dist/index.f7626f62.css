@@ -8,8 +8,32 @@
   transform: translateX(-10rem);
 }
 
+@media only screen and (max-width: 57.5em) {
+  .carousel-control-prev {
+    transform: translate(-5rem);
+  }
+}
+
+@media only screen and (max-width: 39.375em) {
+  .carousel-control-prev {
+    transform: translate(-3rem);
+  }
+}
+
 .carousel-control-next {
   transform: translateX(10rem);
+}
+
+@media only screen and (max-width: 57.5em) {
+  .carousel-control-next {
+    transform: translate(5rem);
+  }
+}
+
+@media only screen and (max-width: 39.375em) {
+  .carousel-control-next {
+    transform: translate(3rem);
+  }
 }
 
 .carousel-control-prev-icon {
@@ -488,6 +512,10 @@ body {
   }
 }
 
+.projects__container {
+  width: 100%;
+}
+
 .projects__title {
   color: #fff;
   letter-spacing: 5px;
@@ -526,26 +554,16 @@ body {
 
 .projects__carousel {
   width: 50%;
-  height: 25rem;
+  height: 19vw;
   margin: 0 25%;
 }
 
 @media only screen and (max-width: 57.5em) {
   .projects__carousel {
-    height: 25%;
-    margin-bottom: 2rem;
+    width: 80%;
+    height: 26vw;
+    margin: 0 10% 7rem;
   }
-}
-
-@media only screen and (max-width: 39.375em) {
-  .projects__carousel {
-    height: 14vh;
-  }
-}
-
-.projects__carousel-inner {
-  height: 100%;
-  width: 100%;
 }
 
 .projects .video {
@@ -556,9 +574,7 @@ body {
 
 @media only screen and (max-width: 57.5em) {
   .projects .video {
-    width: 90%;
-    height: 27vw;
-    margin: 0 5%;
+    height: 30vw;
   }
 }
 

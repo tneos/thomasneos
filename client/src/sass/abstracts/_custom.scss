@@ -7,9 +7,23 @@
 
 .carousel-control-prev {
   transform: translateX(-10rem);
+
+  @media only screen and (max-width: $bp-medium) {
+    transform: translate(-5rem);
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    transform: translate(-3rem);
+  }
 }
 .carousel-control-next {
   transform: translateX(10rem);
+
+  @media only screen and (max-width: $bp-medium) {
+    transform: translate(5rem);
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    transform: translate(3rem);
+  }
 }
 
 .carousel-control-prev-icon {
@@ -30,9 +44,3 @@
     height: 10px !important;
   }
 }
-// .carousel-inner {
-//   @media only screen and (max-width: $bp-large) {
-//     width: 80% !important;
-//     margin: 0 10%;
-//   }
-// }
