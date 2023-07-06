@@ -552,18 +552,6 @@ body {
   display: block;
 }
 
-.projects .video {
-  width: 100%;
-  height: 19vw;
-  object-fit: cover;
-}
-
-@media only screen and (max-width: 57.5em) {
-  .projects .video {
-    height: 30vw;
-  }
-}
-
 .projects__project {
   margin: 6rem 0;
   position: relative;
