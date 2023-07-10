@@ -41,27 +41,27 @@
     }
   }
 
-  // &__carousel {
-  //   width: 50%;
-  //   height: 19vw;
-  //   margin: 0 25%;
+  &__carousel {
+    width: 50%;
+    height: 19vw;
+    margin: 0 25%;
 
-  //   @media only screen and (max-width: $bp-medium) {
-  //     width: 80%;
-  //     height: 26vw;
-  //     margin: 0 10% 7rem 10%;
-  //   }
-  // }
+    @media only screen and (max-width: $bp-medium) {
+      width: 80%;
+      height: 26vw;
+      margin: 0 10% 7rem 10%;
+    }
+  }
 
-  // .video {
-  //   width: 100%;
-  //   height: 19vw;
-  //   object-fit: cover;
+  .video {
+    width: 100%;
+    height: 19vw;
+    object-fit: cover;
 
-  //   @media only screen and (max-width: $bp-medium) {
-  //     height: 30vw;
-  //   }
-  // }
+    @media only screen and (max-width: $bp-medium) {
+      height: 30vw;
+    }
+  }
 
   &__project {
     margin: 6rem 0;
