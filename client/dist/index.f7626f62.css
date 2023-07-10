@@ -552,6 +552,32 @@ body {
   display: block;
 }
 
+.projects__carousel {
+  width: 50%;
+  height: 19vw;
+  margin: 0 25%;
+}
+
+@media only screen and (max-width: 57.5em) {
+  .projects__carousel {
+    width: 80%;
+    height: 26vw;
+    margin: 0 10% 7rem;
+  }
+}
+
+.projects .video {
+  width: 100%;
+  height: 19vw;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 57.5em) {
+  .projects .video {
+    height: 30vw;
+  }
+}
+
 .projects__project {
   margin: 6rem 0;
   position: relative;
