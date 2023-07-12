@@ -69,6 +69,7 @@
   &__btn {
     @include button;
     display: inline-block;
+    cursor: pointer;
   }
   &__btn:link {
     text-decoration: none;
